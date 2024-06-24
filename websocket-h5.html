@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>websocket-h5</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <script src="http://wap.gs.10086.cn/Wapstatic/userfiles/resource/gsecwap/public/rem.js"></script>
+    <script src="http://wap.gs.10086.cn/Wapstatic/userfiles/resource/gsecwap/public/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="http://wap.gs.10086.cn/Wapstatic/userfiles/resource/gsecwap/public/xw_common.css" />
+    <link rel="stylesheet" href="./css/websocket.css" />
+</head>
+
+<body>
+    <div class="grid">
+        <h2>WebSocket测试</h2>
+        <HEADER class="header">
+            <a class="back"></a>
+            <h3 class="tit">服务端：</h3>
+        </HEADER>
+        <div id="message">
+
+        </div>
+
+        <br>
+
+        <HEADER class="header1">
+            <a class="back"></a>
+            <h3 class="tit">客户端：</h3>
+        </HEADER>
+
+        <div id="footer">
+            <input id="text" class="my-input" type="text" />
+            <button onclick="sendSock($('#text').val())">发&nbsp;送</button>
+        </div>
+
+        <div class="footer1" id="footer1">
+            <button onclick="createWebSocket()">建立websocket连接</button>
+            <button onclick="closeWebSocket()">关闭websocket连接</button>
+        </div>
+    </div>
+    <script src="./js/websocket.js"></script>
+    <script src="./js/msgHandler.js"></script>
+    <script src="./js/msgHandler/previewHandler.js"></script>
+</body>
+
+</html>
